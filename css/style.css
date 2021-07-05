@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+/* font-family: 'Raleway', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiAsed;
+    height: 4000px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.item {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.magic-shadow {
+    position: relative;
+    background: #fff;
+}
+
+.magic-shadow:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url('../image/icons/shadow.svg');
+    background-repeat: no-repeat;
+    bottom: -21px;
+    z-index: -1;
+    background-position: center;
+}
+
+
+
+
+.magic-shadow-sm {
+    position: relative;
+    background: #fff;
+}
+
+.magic-shadow-sm:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url('../image/icons/shadow-sm.svg');
+    background-repeat: no-repeat;
+    bottom: -20px;
+    z-index: -1;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .5s ease;
+
+
+}
+
+.btn:hover {
+    background: orange;
+}
+
+
+.section-heading {
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.section-heading:after {
+    display: block;
+    width: 100%;
+    height: 30px;
+    content: "";
+    position: absolute;
+    background-image: url('../image/icons/hr.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -40px;
+}
+
+
+.tect-center {
+    text-align: center;
+}
+
+
+.btnu {
+    padding: 20px 40px;
+    color: #111;
+    background: yellow;
+    border: none;
+    transition: .3s;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.btnu:hover {
+    color: #fff;
+    background: #000;
+}
+
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+@media(min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media(min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+header.topbar {
+    background-color: black;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding: 0.75rem 0;
+}
+
+header.topbar .icons a {
+    margin-right: 0.6rem;
+}
+
+header.topbar .author .divider {
+    padding: 0 20px;
+}
+
+header.topbar .author i {
+    margin-left: .35rem;
+}
+
+header.topbar i {
+    color: #fff;
+}
+
+header.topbar .author a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header.topbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.topbar .container .author {
+    display: flex;
+}
+
+/* navbar */
+nav .top {
+    padding: 1.5rem 0;
+}
+
+nav .top .justify i {
+    margin-right: 20px;
+    color: orange;
+}
+
+nav .top .contact i {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+nav .top .contact h5 {
+    margin-bottom: .25rem;
+}
+
+nav .top .contact h6 {
+    margin-bottom: .25rem;
+    letter-spacing: 0.055rem;
+}
+
+nav .top .time i {
+    font-size: 30px;
+    margin-left: 10px;
+
+}
+
+nav .top .time h5 {
+    margin-bottom: .25rem;
+}
+
+nav .top .time h6 {
+    margin-bottom: .25rem;
+    letter-spacing: 0.055rem;
+}
+
+nav .top .logo img {
+    width: 300px;
+    height: 100px;
+}
+
+nav .navbar .container a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #222;
+    padding: 1rem 1.5rem;
+    transition: .4s;
+
+}
+
+nav .navbar .container a.active {
+    background: #ff5f61;
+    color: #fff;
+}
+
+nav .navbar .container a:hover {
+    color: #fff;
+    background-color: #ff5f61;
+    transition: .4s;
+}
+
+/*
+navbar end and heaer part start*/
+header.hero {
+    height: 550px;
+    width: 100%;
+    background-image: url('../image/images/hero.png');
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+
+}
+
+header.hero .container {
+    position: relative;
+}
+
+header.hero .welcome {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+header.hero .welcome span {
+    color: orange;
+    text-transform: capitalize;
+    font-size: 34px;
+
+}
+
+header.hero .welcome .hand {
+    color: #ff5f61;
+    font-size: 40px;
+}
+
+header.hero .welcome p {
+    line-height: 28px;
+}
+
+header.hero .welcome .btn:first-child {
+    margin-right: 20px;
+}
+
+header.hero .hero-img {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+}
+
+/* top product section */
+section.top-products {
+    padding: 4rem 0;
+    background: rgb(235, 227, 227);
+}
+
+section.top-products .mask-slider .mask-card {
+    background: #fff;
+    padding: 1.5rem 0;
+    border-radius: 4px;
+}
+
+section.top-products .mask-slider .mask-card .product-img img {
+    width: 80%;
+    height: 200px;
+    object-fit: contain;
+    padding-bottom: 1rem;
+}
+
+hr {
+    border: 1px solid #ff5f61;
+    opacity: 0.9;
+    margin: 1rem 0;
+
+}
+
+section.top-products .mask-slider .mask-card h2 {
+    font-weight: 6000;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+section.top-products .mask-slider .mask-card .stars img {
+    margin-right: 0.25rem;
+    font-size: 25px;
+}
+
+section.top-products .mask-slider .mask-card .price {
+    font-weight: 600;
+    color: #f50a0a;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+section.top-products .mask-slider .mask-card button {
+
+    border: 2px solid yellow;
+    background-color: #fff;
+    border-radius: 4px;
+    color: rgb(7, 7, 7);
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: 22px;
+}
+
+section.top-products .mask-slider .mask-card button:hover {
+    background: yellow;
+    color: #fff;
+    font-weight: 600;
+}
+
+section.top-products .mask-slider .mask-card button i {
+    background: rgb(162, 162, 28);
+    padding: 20px;
+    height: 32px;
+    margin-right: 1.2rem;
+    color: #fff;
+    font-size: 25px;
+
+}
+
+.slick-slide {
+    margin: 0 27px;
+}
+
+.slick-list {
+    margin: 0 -27px;
+}
+
+.slick-track {
+    padding: 1rem 0;
+}
+
+.top-products .slider-button1 {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: #ff5f61;
+    border-radius: 90px 0 0px 90px;
+    cursor: pointer;
+    outline: none;
+}
+
+.top-products .slider-button2 {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: #ff5f61;
+    border-radius: 0px 90px 90px 0px;
+    cursor: pointer;
+    outline: none;
+}
+
+.top-products .slider {
+    position: relative;
+}
+
+.prev-button {
+    position: absolute;
+    top: 46%;
+    left: -5rem;
+    z-index: 1;
+    color: rgb(16, 1, 1);
+    padding: 30px;
+}
+
+.next-button {
+    position: absolute;
+    top: 46%;
+    right: -5rem;
+    z-index: 1;
+    padding: 30px;
+}
+
+.top-products .slider-button i {
+    font-size: 40px;
+
+}
+
+.top-products .hello span {
+    font-size: 13px;
+    display: block;
+    color: #000;
+
+}
+
+section.about-product img {
+    width: 90%;
+}
+
+.flex-1 {
+    flex: 1;
+}
